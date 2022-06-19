@@ -4,7 +4,7 @@ import Card from "../CardComponents/Card";
 
 const PopulerJobs = () => {
   return (
-    <Box as="section" h="100vh" pt="8rem">
+    <Box as="section" display="flex" alignItems="center" justifyContent="center" h="100vh">
       <Flex
         alignItems="center"
         flexDirection="column"

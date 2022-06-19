@@ -17,7 +17,7 @@ import ImageIcons from "../ImageIcons";
 const Hero = () => {
   const color = useColorModeValue("biru.100", "biru.50");
   return (
-    <Box as="section" pt={"48"} h="100vh">
+    <Box as="section" display="flex" alignItems="center" justifyContent="center" h="100vh">
       <Flex
         position="relative"
         alignItems="center"
