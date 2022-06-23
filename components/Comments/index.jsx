@@ -52,7 +52,7 @@ const Comments = ({ data }) => {
   };
 
   return (
-    <Box as="section" pt={{base:"14rem", md:"8rem"}}>
+    <Box as="section" pt={{base:"14rem"}}>
       <Flex w="100%" mx="auto" maxW="75rem" flexDir="column" px="1.5rem">
         <form onSubmit={handleSumbit}>
           <Flex flexDir="column">

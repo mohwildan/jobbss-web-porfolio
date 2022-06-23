@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Comments from "../components/Comments";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/sections/Hero";
@@ -7,6 +8,9 @@ import PopulerJobs from "../components/sections/PopulerJobs";
 export default function Home({data}) {
   return (
     <>
+    <Head>
+      <title>Home | jobbss</title>
+    </Head>
    <Navbar />
    <Hero />
    <PopulerJobs />

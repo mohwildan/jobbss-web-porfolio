@@ -1,5 +1,5 @@
 import { CloseIcon } from "@chakra-ui/icons";
-import { Box, Button, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { NavbarTitle } from "./NavbarItem";
 import { useSession } from "next-auth/react";
@@ -29,14 +29,15 @@ const NavbarMobile = ({ click, setClick }) => {
       bg={color}
       transition="0.3s"
     >
-      <Button
+      <Icon
         position="absolute"
         onClick={closeMenuMobile}
-        right="10px"
-        top="10px"
-      >
-        <CloseIcon />
-      </Button>
+        right="20px"
+        top="20px"
+        fontSize="1.5rem"
+        as={CloseIcon}
+      />
+
       {NavbarTitle.map((item) => {
         return (
           <Link href={item.href} key={item.title}>

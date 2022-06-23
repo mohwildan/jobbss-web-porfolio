@@ -13,11 +13,13 @@ import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { motion } from "framer-motion";
 import ImageIcons from "../ImageIcons";
+import Sections from "../animations/Sections";
 
 const Hero = () => {
   const color = useColorModeValue("biru.100", "biru.50");
   return (
     <Box as="section" display="flex" alignItems="center" justifyContent="center" h="100vh">
+      <Sections delay={0.5}>
       <Flex
         position="relative"
         alignItems="center"
@@ -26,10 +28,6 @@ const Hero = () => {
         maxW="75rem"
         mx="auto"
         px="1.5rem"
-        as={motion.div}
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition="0.6s linier"
       >
       <ImageIcons />
         <Text fontSize={["10px", "13px"]} color={color} mb="1.6rem">
@@ -93,6 +91,7 @@ const Hero = () => {
           </Box>
         </Text>
       </Flex>
+      </Sections>
     </Box>
   );
 };

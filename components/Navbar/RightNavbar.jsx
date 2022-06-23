@@ -1,8 +1,9 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon,HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   Flex,
+  Icon,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -34,21 +35,7 @@ const RightNavbar = ({click, setClick}) => {
         display={["flex", "flex", "none", "none"]}
         onClick={() => setClick(!click)}
       >
-        <Box
-          as={motion.div}
-          mb="0.5rem"
-          w="2.2rem"
-          bg={colorToggle}
-          h="3px"
-        ></Box>
-        <Box
-          as={motion.div}
-          mb="0.5rem"
-          w="2.2rem"
-          bg={colorToggle}
-          h="3px"
-        ></Box>
-        <Box as={motion.div} w="2.2rem" bg={colorToggle} h="3px"></Box>
+       <Icon as={HamburgerIcon} fontSize="2.3rem"/>
       </Flex>
       <Box display="flex">
         <ModalButton />        
